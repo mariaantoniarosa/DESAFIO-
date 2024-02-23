@@ -1,0 +1,106 @@
+body { 
+    display: flex;
+        justify-content: center;
+        margin: 0 0 0 0;
+        overflow-x: hidden;
+        background-color: rgb(250, 211, 228);
+    }
+    
+    p{ 
+        display: flex;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        justify-content: center;
+        
+    }
+    
+    img { 
+        width: 300px;
+        height: 220px;
+    }
+    .quadrado { 
+        display: flex;
+    justify-content: center;
+    align-items: center;
+        background-color: white;
+        width: 350px;
+        height: 410px;
+        border-radius: 10px;
+        flex-direction: column;
+    }
+    
+    .centro { 
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .linha { 
+        border: 1px;
+        color: black;
+        width: 300px;
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+       
+    
+    }
+    input { 
+        width: 40px;
+        padding: 7px;
+        border: none;
+        display: flex;
+        align-items: center;
+        font-size: larger;
+        font-weight: bolder;
+    }
+    #coracao, #comentario, #enviado, #salvos { 
+    
+        width: 30px;
+        height: 30px;
+        padding:5px;
+        
+    }
+    
+    #salvos  { 
+        margin-left: 80px;
+       
+    }
+    
+    .hidden {
+        
+        transition: opacity 0.5s ease;
+        display: none;
+    }
+    #like { 
+        position: absolute;
+        top: 43%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 200px;
+        color: red;
+        
+  
+    }
+    #likeButton { 
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    #gato { 
+        cursor: pointer;
+    }
+
+    
+    @keyframes fadeOut {
+        from { opacity: 1; }
+        to { opacity: 0; }
+    }
+    
+    #like {
+        opacity: 1;
+        animation: fadeOut 3s; /* Aplica a animação fadeOut com duração de 1 segundo */
+    }
+    
